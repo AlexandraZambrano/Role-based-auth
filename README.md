@@ -1,70 +1,46 @@
-# Getting Started with Create React App
+# React JWT Authentication Example
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This is a simple example project that demonstrates how to implement JWT authentication in a React application using React Router.
 
-## Available Scripts
+## Project Overview
 
-In the project directory, you can run:
+The project consists of the following components and functionalities:
 
-### `npm start`
+- **Authentication**: Users can log in and receive a JSON Web Token (JWT) upon successful login. The JWT is stored in the browser's local storage.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- **Protected Routes**: Certain routes are protected and can only be accessed by authenticated users with specific roles.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- **Role-Based Authorization**: Users have roles associated with their JWT. Access to protected routes is determined based on these roles.
 
-### `npm test`
+- **Navigation**: Users are redirected to an unauthorized page if they attempt to access restricted routes without the necessary roles.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Getting Started
 
-### `npm run build`
+### Prerequisites
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Before running the project, make sure you have the following installed:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+- [Node.js](https://nodejs.org/) (v14 or higher)
+- [npm](https://www.npmjs.com/) (v7 or higher)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Installation
 
-### `npm run eject`
+1. Clone the repository to your local machine:
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+   ```shell
+   git clone <repository-url>
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### Future Enhancements
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+As a future enhancement, consider implementing the following:
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+- **API Link in .env**: Store the API endpoint in an environment variable (`.env` file) for better configuration management.
 
-## Learn More
+- **Refactor Contexts**: Refactor the context management to improve context separation and organization.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+- **User Registration**: Implement user registration functionality to allow new users to create accounts.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+- **User Profile**: Create a user profile page where users can view and update their profile information.
 
-### Code Splitting
+- **Password Reset**: Implement a password reset mechanism for users who forget their passwords.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
